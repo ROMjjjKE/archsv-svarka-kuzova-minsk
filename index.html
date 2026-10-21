@@ -1,0 +1,155 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>АрЧсВ — сварочные работы кузова · Минск · +375 33 696-23-26</title><meta name="description" content="ООО «АрЧсВ»: сварочные работы кузова авто в Минске — пороги, арки, замена четвертей любой сложности. Новые сварочные элементы с полной обработкой. Центральный район. +375 33 696-23-26"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;900&family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet"><style>
+:root{--paper:#EDF0F3;--card:#FFFFFF;--ink:#17222E;--steel:#35506B;--steel-soft:#DDE4EA;--hot:#C64B14;--hot-soft:#F6E4D9;--line:#C9D2DA}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Manrope',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}::selection{background:var(--hot);color:#fff}
+.wrap{width:min(1080px,100% - 40px);margin:auto}
+.head{position:fixed;inset:0 0 auto;z-index:100;background:rgba(237,240,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.head .row{height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:'Bitter',serif;font-weight:900;font-size:1.05rem}.logo i{width:30px;height:30px;border-radius:6px;background:var(--hot);display:grid;place-items:center;color:#fff;font-style:normal;font-family:'Manrope',sans-serif;font-weight:800;font-size:.75rem}
+.logo small{display:block;font-family:'Manrope',sans-serif;font-weight:600;font-size:.54rem;letter-spacing:.16em;text-transform:uppercase;color:var(--steel)}
+.menu{display:flex;gap:1.4rem;font-size:.8rem;font-weight:600;color:var(--steel)}.menu a:hover{color:var(--hot)}
+.btn{display:inline-block;background:var(--hot);color:#fff;font-weight:700;font-size:.85rem;padding:.7rem 1.2rem;border-radius:.5rem;transition:.2s}.btn:hover{filter:brightness(.88)}
+.hero{padding:112px 0 56px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;align-items:center}
+.tag{display:inline-block;background:var(--hot-soft);color:var(--hot);font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:.38rem .8rem;border-radius:999px}
+h1{font-family:'Bitter',serif;font-weight:900;font-size:clamp(1.8rem,4.2vw,2.9rem);line-height:1.12;letter-spacing:-.01em;margin-top:1rem}h1 em{font-style:normal;color:var(--hot)}
+.lead{color:var(--steel);margin-top:1rem;max-width:46ch}
+.hero-cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn-ghost{display:inline-block;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:.85rem;padding:.7rem 1.2rem;border-radius:.5rem;transition:.2s}.btn-ghost:hover{border-color:var(--hot);color:var(--hot)}
+/* слайдер до/после */
+.ba{position:relative;border-radius:1rem;overflow:hidden;box-shadow:0 26px 50px -26px rgba(23,34,46,.4);touch-action:none;user-select:none}
+.ba img{width:100%;height:100%;object-fit:cover}
+.ba .after{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.ba .line{position:absolute;top:0;bottom:0;width:3px;background:var(--hot);left:50%;transform:translateX(-50%);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;border:3px solid var(--hot);display:grid;place-items:center;font-size:.9rem;color:var(--hot);pointer-events:none;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.ba .lbl{position:absolute;bottom:.7rem;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:rgba(23,34,46,.72);color:#fff;padding:.28rem .6rem;border-radius:.4rem}
+.ba .lbl.l{left:.7rem}.ba .lbl.r{right:.7rem}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+/* что варим — вертикальная смета */
+.section{padding:64px 0}.section.tint{background:#E4E9EE;border-block:1px solid var(--line)}
+.shead{max-width:600px;margin-bottom:1.8rem}.shead .k{font-weight:800;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--hot)}.shead h2{font-family:'Bitter',serif;font-weight:900;font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.15;margin-top:.45rem}
+.ledger{background:var(--card);border:1px solid var(--line);border-radius:1rem;overflow:hidden}
+.lrow{display:grid;grid-template-columns:2.6rem 1fr 1.3fr;gap:1rem;padding:1.05rem 1.3rem;border-top:1px solid var(--line);align-items:baseline;transition:background .2s}
+.lrow:first-child{border-top:0}.lrow:hover{background:var(--hot-soft)}
+.lrow .n{font-family:'Bitter',serif;font-weight:900;color:var(--hot)}
+.lrow b{font-size:1rem}
+.lrow span{color:var(--steel);font-size:.86rem}
+/* хроника обработки */
+.chrono{position:relative;margin-top:.6rem;padding-left:1.6rem}
+.chrono:before{content:'';position:absolute;left:.45rem;top:.5rem;bottom:.5rem;width:2px;background:var(--line)}
+.cstep{position:relative;padding:0 0 1.6rem}
+.cstep:before{content:'';position:absolute;left:-1.6rem;top:.45rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--hot);box-shadow:0 0 0 4px var(--hot-soft)}
+.cstep b{font-family:'Bitter',serif;font-size:1.02rem}
+.cstep p{color:var(--steel);font-size:.88rem;margin-top:.2rem;max-width:52ch}
+.chrono-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start}
+/* виджет оценки */
+.quote{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.chip{border:1.5px solid var(--line);border-radius:999px;padding:.45rem 1rem;font-size:.82rem;font-weight:700;cursor:pointer;transition:.2s;background:#fff}
+.chip.on,.chip:hover{border-color:var(--hot);color:var(--hot);background:var(--hot-soft)}
+.qout{margin-top:1rem;border-top:1px dashed var(--line);padding-top:1rem;font-size:.9rem;color:var(--steel)}
+/* контакты */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.4rem;align-items:center}
+.big-tel{display:inline-block;font-family:'Bitter',serif;font-weight:900;font-size:clamp(1.6rem,4vw,2.4rem);color:var(--hot);margin-top:1rem}
+footer{background:var(--ink);color:#B9C4CE;font-size:.74rem;padding:1.2rem 0}
+footer .row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+[data-in]{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.visible[data-in]{opacity:1;transform:none}
+@media(max-width:860px){
+.menu{display:none}
+.hero-grid,.chrono-grid,.contact-grid{grid-template-columns:1fr}
+.head .row{height:auto;padding:.6rem 0;flex-wrap:wrap}
+.lrow{grid-template-columns:1fr;gap:.15rem;padding:1rem 1.1rem;align-items:start}
+.lrow .n{font-size:.78rem}
+.lrow b{font-size:.95rem}
+.lrow .n,.lrow b,.lrow span{grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head><body><header class="head"><div class="wrap row"><a class="logo" href="#top" aria-label="АрЧсВ"><i>АЧ</i><span>АрЧсВ<small>сварка кузова · Минск</small></span></a><nav class="menu"><a href="#works">Что варим</a><a href="#process">Обработка</a><a href="#quote">Оценка</a><a href="#contact">Контакты</a></nav><a class="btn" href="tel:+375336962326">+375 33 696-23-26</a></div></header><main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div data-in>
+<span class="tag">ООО «АрЧсВ» · Центральный район</span>
+<h1>Сварка кузова: от ржавого порога до <em>задней четверти</em></h1>
+<p class="lead">Сварочные работы авто любой сложности. Новый элемент ставим целиком и проводим полную обработку — шов зачищается, грунтуется и защищается от коррозии.</p>
+<div class="hero-cta"><a class="btn" href="tel:+375336962326">Оценить по фото</a><a class="btn-ghost" href="#works">Что мы варим</a></div>
+</div>
+<div class="ba" data-in id="ba">
+<img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/8e07d92f8_generated_image.png" alt="Ржавый порог автомобиля до ремонта, визуализация">
+<div class="after"><img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/3628d04a1_generated_image.png" alt="Заваренный и загрунтованный порог после ремонта, визуализация"></div>
+<span class="lbl l">До</span><span class="lbl r">После</span>
+<div class="line"></div><div class="knob">⇔</div>
+<input type="range" min="0" max="100" value="50" aria-label="Сравнить до и после">
+</div>
+</div></section>
+<section class="section tint" id="works"><div class="wrap">
+<div class="shead" data-in><span class="k">Смета металла</span><h2>Что мы привариваем</h2></div>
+<div class="ledger" data-in>
+<div class="lrow"><span class="n">01</span><b>Пороги</b><span>Замена или ремонт: от локальной переварки до новых элементов целиком.</span></div>
+<div class="lrow"><span class="n">02</span><b>Арки</b><span>Задние и передние: вырезаем гниль, ставим ремонтные вставки или новые арки.</span></div>
+<div class="lrow"><span class="n">03</span><b>Четверти</b><span>Замена задних четвертей — «под заднее крыло», с подгонкой зазоров.</span></div>
+<div class="lrow"><span class="n">04</span><b>Днище и лонжероны</b><span>Сварочные работы по днищу, усилителям и лонжеронам.</span></div>
+<div class="lrow"><span class="n">05</span><b>Любые сварочные элементы</b><span>Крылья, кронштейны, ремонтные накладки — задачи нестандартной сложности.</span></div>
+</div>
+</div></section>
+<section class="section" id="process"><div class="wrap chrono-grid">
+<div data-in>
+<div class="shead" style="margin-bottom:.8rem"><span class="k">Почему шов живёт</span><h2>Полный цикл обработки</h2></div>
+<p style="color:var(--steel)">Объявления часто обещают «приварим». Мы делаем больше: каждый новый элемент проходит полную обработку после установки.</p>
+<div style="margin-top:1.2rem"><a class="btn" href="tel:+375336962326">Обсудить свою машину</a></div>
+</div>
+<div class="chrono" data-in>
+<div class="cstep"><b>Диагностика металла</b><p>Смотрим не только очевидную дыру: находим границы коррозии, чтобы срезать всю гниль.</p></div>
+<div class="cstep"><b>Замена элемента</b><p>Привариваем новый порог, арку или четверть — не «латку», а полноценный элемент.</p></div>
+<div class="cstep"><b>Зачистка шва</b><p>Шов зачищается до металла: никакой «грозди» капель под слоем мастики.</p></div>
+<div class="cstep"><b>Защита от коррозии</b><p>Грунт + антикоррозийная обработка шва и полостей. Металл закрыт от воды и соли.</p></div>
+</div>
+</div></section>
+<section class="section tint" id="quote"><div class="wrap">
+<div class="shead" data-in><span class="k">Честная цена</span><h2>Сколько это стоит</h2></div>
+<div class="quote" data-in>
+<p style="font-weight:700">Выберите элемент — покажем, от чего зависит цена:</p>
+<div class="chips" id="chips">
+<button class="chip on" data-q="Обычно это точечная переварка или новый элемент: объём зависит от того, сгнила ли рамка порога изнутри. Фото днища и порога с двух сторон ускорит оценку в разы." type="button">Порог</button>
+<button class="chip" data-q="Ключевой вопрос — цел ли кузов за аркой. Если коррозия ушла под четверть или в лонжерон, объём работ вырастает: это видно по фото с зачищенным участком." type="button">Арка</button>
+<button class="chip" data-q="Самая «объёмная» работа: нужна подгонка зазоров и закладка под покраску. Точная цена — после осмотра или фото всех сторон крыла." type="button">Четверть</button>
+<button class="chip" data-q="Днище, лонжероны, усилители — оценка только по подъёмнику. Пригоните машину в Центральный район или пришлите фото днища на телефон." type="button">Днище / лонжерон</button>
+</div>
+<p class="qout" id="qout">Обычно это точечная переварка или новый элемент: объём зависит от того, сгнила ли рамка порога изнутри. Фото днища и порога с двух сторон ускорит оценку в разы.</p>
+<div class="quote" style="margin-top:1.2rem;padding:1.3rem 1.5rem">
+<p style="font-weight:800;font-family:'Bitter',serif">Рассрочка от МТБанка — для клиентов банка</p>
+<p style="color:var(--steel);font-size:.88rem;margin-top:.4rem">Можно разбить оплату на <b>2–6 месяцев</b>. Оформление — для клиентов МТБанка: подробности и порядок подскажем по телефону.</p>
+</div>
+<p style="margin-top:.9rem"><a class="btn" href="tel:+375336962326">Отправить фото на +375 33 696-23-26</a></p>
+</div>
+</div></section>
+<section class="section" id="contact"><div class="wrap contact-grid">
+<div data-in><span class="k" style="font-weight:800;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--hot)">Контакты</span>
+<h2 style="font-family:'Bitter',serif;font-weight:900;font-size:clamp(1.5rem,3vw,2rem);margin-top:.5rem">Пришлите фото — назовём цену по телефону</h2>
+<p style="color:var(--steel);margin-top:.7rem;max-width:44ch">Опишите, что с машиной, или пришлите фото проблемного места: ответим, что вваривать и сколько это займёт.</p>
+<a class="big-tel" href="tel:+375336962326">+375 33 696-23-26</a>
+</div>
+<div class="ledger" data-in>
+<div class="lrow"><span class="n">ООО</span><b>«АрЧсВ»</b><span>Сварочные работы кузова любой сложности</span></div>
+<div class="lrow"><span class="n">⚙</span><b>Минск</b><span>Центральный район</span></div>
+</div>
+</div></section>
+</main><footer><div class="wrap row"><span>ООО «АрЧсВ» · сварочные работы авто · Минск</span><span>+375 33 696-23-26 · Фото на сайте — визуализации</span></div></footer>
+<script>
+(function(){
+var ba=document.getElementById('ba'),knob=ba.querySelector('.knob'),line=ba.querySelector('.line'),after=ba.querySelector('.after'),inp=ba.querySelector('input');
+function setPos(p){p=Math.max(0,Math.min(100,p));after.style.clipPath='inset(0 0 0 '+p+'%)';line.style.left=p+'%';knob.style.left=p+'%';inp.value=p}
+inp.addEventListener('input',function(){setPos(+inp.value)});
+var drag=false;
+ba.addEventListener('pointerdown',function(e){drag=true;move(e)});
+window.addEventListener('pointermove',function(e){if(drag)move(e)});
+window.addEventListener('pointerup',function(){drag=false});
+function move(e){var r=ba.getBoundingClientRect();setPos((e.clientX-r.left)/r.width*100)}
+document.querySelectorAll('#chips .chip').forEach(function(c){
+ c.addEventListener('click',function(){
+  document.querySelectorAll('#chips .chip').forEach(function(x){x.classList.remove('on')});
+  c.classList.add('on');
+  var o=document.getElementById('qout');o.textContent=c.dataset.q;
+ });
+});
+if('IntersectionObserver'in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.1});
+ document.querySelectorAll('[data-in]').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('[data-in]').forEach(function(el){el.classList.add('visible')})}
+})();
+</script></body></html>
